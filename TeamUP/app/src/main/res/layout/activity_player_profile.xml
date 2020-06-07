@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.teamup.PlayerProfile"
+    android:background="#E0F2F1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/playerprofiletoolbar"
+        android:layout_width="match_parent"
+        android:background="?colorPrimary"
+        android:layout_height="?actionBarSize">
+
+
+        <TextView
+            android:id="@+id/teamregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Profile"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/icon_submit"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chooseevent"
+    android:layout_below="@+id/label"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+</Spinner>
+    <TextView
+        android:id="@+id/label"
+        style="@style/InputLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Choose Event"
+        android:layout_below="@+id/playerprofiletoolbar"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseteam"
+        android:layout_below="@+id/label1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+    </Spinner>
+    <TextView
+        android:id="@+id/label1"
+        style="@style/InputLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Choose Team"
+        android:layout_below="@+id/chooseevent"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseteam">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="Enter Name"
+            android:layout_below="@+id/chooseteam"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="#00695C"
+            android:textColorHint="@color/seagreen"
+            android:layout_marginRight="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_name">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DOB"
+        android:hint="Date of Birth"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#00695C"
+        android:textColorHint="@color/seagreen"
+        android:layout_marginRight="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp"
+        android:layout_below="@+id/layout_name"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_DOB"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:hint="Address"
+            android:textColorHint="@color/seagreen"
+            android:textColor="#00695C"
+            android:layout_below="@+id/playerprofiletoolbar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_Address"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:hint="City"
+            android:layout_below="@+id/playerprofiletoolbar"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/seagreen"
+            android:textColor="#00695C"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_city"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pincode"
+            android:hint="Pincode"
+            android:textColorHint="@color/seagreen"
+            android:textColor="#00695C"
+            android:layout_below="@+id/playerprofiletoolbar"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+</RelativeLayout>

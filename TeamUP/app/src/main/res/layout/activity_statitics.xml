@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.teamup.Statitics">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/stateticstoolbar"
+        android:layout_width="match_parent"
+        android:background="?colorPrimary"
+        android:layout_height="?actionBarSize">
+
+
+        <TextView
+            android:id="@+id/teamregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statitics"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"/>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

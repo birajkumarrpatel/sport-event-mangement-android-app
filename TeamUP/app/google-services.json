@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "363493062603",
+    "firebase_url": "https://teamup3-ac314.firebaseio.com",
+    "project_id": "teamup3-ac314",
+    "storage_bucket": "teamup3-ac314.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363493062603:android:46abd465d2bd5571",
+        "android_client_info": {
+          "package_name": "com.example.dell.teamup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363493062603-p8hbomvsi2c48hvlcl65486ev477dno2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "androidproject.teamup",
+            "certificate_hash": "a0ff6b366153f64b9e0d267595782e2094898ac8"
+          }
+        },
+        {
+          "client_id": "363493062603-20j9bg2bot4s18qhgvi5hovgh1j2uvna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQnC3WxvK9bcBnQ3L0v--2zMqvVeY0gJQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363493062603-20j9bg2bot4s18qhgvi5hovgh1j2uvna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

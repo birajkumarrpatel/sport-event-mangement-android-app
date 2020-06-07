@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.teamup.Registration"
+    android:background="#E0F2F1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+                <ImageView
+                    android:id="@+id/imglogo_login"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo4"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_registrationtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginTop="110dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/registrationtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:layout_below="@+id/layout_login"
+                    android:textColor="@color/ll_1"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/registercard"
+                android:layout_width="match_parent"
+                android:layout_height="620dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="7dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/fullName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:hint="Full Name"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/seagreen"
+                        android:textColor="#00695C"
+                        android:textSize="20dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_useremailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="80dp">
+                    <EditText
+                        android:id="@+id/userEmailId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical"
+                        android:hint="Email Id"
+                        android:textColorHint="@color/seagreen"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#00695C"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="150dp">
+                    <EditText
+                        android:id="@+id/mobileNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColorHint="@color/seagreen"
+                        android:singleLine="true"
+                        android:textColor="#00695C"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="220dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#00695C"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColorHint="@color/seagreen"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/layout_confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginTop="290dp">
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ConfirmPassword"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/seagreen"
+                        android:textColor="#00695C"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="20dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender :"
+                    android:textColor="@color/ll_1"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="370dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/confirmPassword"/>
+
+
+                <RadioGroup
+                    android:id="@+id/gen_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirmPassword"
+                    android:layout_toRightOf="@+id/gender"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="370dp"
+                    android:layout_marginLeft="140dp">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="20dp"
+                        android:textColor="@color/ll_1"
+                        android:layout_below="@id/confirmPassword"
+                        android:layout_toRightOf="@+id/gender" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/gender"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/ll_1"/>
+                </RadioGroup>
+
+
+                <CheckBox
+                    android:id="@+id/terms_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="420dp"
+                    android:text="By clicking SignUp you agree all the Terms and Conditions."
+                    android:textColor="@color/ll_1"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/gender"/>
+                <Button
+                    android:id="@+id/signUpBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="490dp"
+                    android:background="#E0F2F1"
+                    android:padding="3dp"
+                    android:text="Sign Up"
+                    android:layout_below="@+id/terms_conditions"
+                    android:textColor="#009688"
+                    android:textSize="17sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/already_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="560dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/signUpBtn"
+                    android:padding="10dp"
+                    android:text="@string/already_user"
+                    android:textColor="@color/ll_1"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"/>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

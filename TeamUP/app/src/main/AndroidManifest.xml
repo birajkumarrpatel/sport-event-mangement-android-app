@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.teamup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo4"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Registration2" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Home"/>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".ForgotPassword2" />
+        <activity android:name=".ForgotPassword3" />
+        <activity
+            android:name=".Home1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Home"/>
+        <activity
+            android:name=".organizer.OrganizerRegister"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".captain.EventRegister"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Results"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Statitics"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photoes"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScheduleMatch"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewTeam"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlayerProfile"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseEvent" />
+        <activity android:name=".DisplayTeam" />
+        <activity android:name=".Register" />
+        <activity android:name=".Chat" />
+        <activity android:name=".Users" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".EditProfile"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowResults"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowPhotoes"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".captain.HomeCap"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewTeamMembers" />
+        <activity android:name=".ChooseCaptainEvent"></activity>
+    </application>
+
+</manifest>

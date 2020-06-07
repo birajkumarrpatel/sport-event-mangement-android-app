@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E0F2F1">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCET Cricket Club"
+            android:layout_toRightOf="@+id/image"
+            android:padding="4dp"
+            android:textColor="@color/seagreen"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/eventname"
+            android:padding="4dp"
+            android:textSize="15dp"
+            android:textColor="@color/seagreen"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/addresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Venue :"
+            android:textColor="@color/seagreen"
+            android:layout_toRightOf="@+id/image"
+            android:layout_below="@+id/sport"
+            android:textSize="18dp"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ManekChowk"
+            android:textColor="@color/seagreen"
+            android:layout_toRightOf="@+id/addresstext"
+            android:layout_below="@+id/sport"
+            android:textSize="18dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/seagreen"
+            android:layout_below="@+id/addresstext"
+            android:layout_toRightOf="@+id/image"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24-04-2018"
+            android:textStyle="normal"
+            android:textSize="18dp"
+            android:textColor="@color/seagreen"
+            android:layout_toRightOf="@+id/datetext"
+            android:layout_below="@+id/addresstext"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.teamup.Results"
+    android:background="#E0F2F1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/resultstoolbar"
+        android:layout_width="match_parent"
+        android:background="?colorPrimary"
+        android:layout_height="?actionBarSize">
+
+
+        <TextView
+            android:id="@+id/teamregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="7dp"
+        android:layout_below="@+id/resultstoolbar"
+        android:layout_marginBottom="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/eventlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textColor="@color/seagreen"
+                style="@style/InputLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Spinner
+                android:id="@+id/eventspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/eventlabel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/winningteamlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Winning Team"
+                android:textColor="@color/seagreen"
+                android:layout_below="@+id/eventspinner"
+                style="@style/InputLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Spinner
+                android:id="@+id/winningteamspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/winningteamlabel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/runningteamlabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Runner's Up Team"
+                android:textColor="@color/seagreen"
+                android:layout_below="@+id/winningteamspinner"
+                style="@style/InputLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <Spinner
+                android:id="@+id/runningteamspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/runningteamlabel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <Button
+                android:id="@+id/add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_below="@+id/runningteamspinner"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:textColor="@color/seagreen"
+                android:background="#80CBC4"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

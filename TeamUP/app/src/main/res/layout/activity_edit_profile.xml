@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.teamup.EditProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/editprofiletoolbar"
+        android:layout_width="match_parent"
+        android:background="?colorPrimary"
+        android:layout_height="?actionBarSize">
+
+
+        <TextView
+            android:id="@+id/teamregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/changepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editprofiletoolbar"
+        android:text="Change Password"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/seagreen"
+        android:background="#E0F2F1"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
